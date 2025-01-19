@@ -47,7 +47,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
-    title: "QuickKart - an E-commerce website",
+    title: "QuickCart - an E-commerce website",
     image: project4,
     description:
       "Created Quick Cart, an e-commerce website using HTML, CSS, and JavaScript. This project focuses on an intuitive front-end design, featuring a responsive layout, product listings, and interactive features like cart management. Quick Cart demonstrates my ability to build user-friendly and visually appealing web interfaces tailored for e-commerce platforms",
