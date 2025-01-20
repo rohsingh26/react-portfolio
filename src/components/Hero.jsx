@@ -1,6 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/profile.jpg";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 const container= (delay) => ({
     hidden: {x: -100, opacity:0},
     visible: {
@@ -29,9 +30,22 @@ const Hero = () => {
                     animate="visible"
                     whileInView={{x:[-50,0], opacity:[0,1]}}
                     transition={{duration:0.5}}
-                    whileHover={{ scale:1.1 }} whileTap={{scale:1.2}} drag="x" dragConstraints={{left: 0, right: 0 }}  className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent origin-left">Software Engineer<br /> <motion.p variants={container(0)}
+                    whileHover={{ scale:1.1 }} whileTap={{scale:1.2}} drag="x" dragConstraints={{left: 0, right: 0 }}  className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent origin-left">Software Engineer<br /> <motion.p
+                    variants={container(0)}
                     initial="hidden"
-                    animate="visible" className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-sm tracking-tight text-transparent origin-left">Full Stack Developer</motion.p> </motion.span>
+                    animate="visible"
+                    className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-sm tracking-tight text-transparent origin-left"
+                  >
+                    <Typewriter
+                      words={['Full Stack Developer', 'AI/ML Enthusiast', 'Python Developer', 'Tech Innovator']}
+                      loop={0}
+                      cursor
+                      cursorStyle="|"
+                      typeSpeed={50}
+                      deleteSpeed={50}
+                      delaySpeed={1000}
+                    />
+                  </motion.p> </motion.span>
                     <motion.p variants={container(1)}
                     initial="hidden"
                     animate="visible" 
