@@ -56,7 +56,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Sannidhi Road, Basavanagudi, Bangalore, Karnataka - 560004 ",
+  address: "Basavanagudi, Bangalore, Karnataka, India - 560004 ",
   phoneNo: "+91 8207523728 ",
   email: "rohsingh26@gmail.com",
 };
