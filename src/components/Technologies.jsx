@@ -36,43 +36,43 @@ const Technologies = () => {
         <motion.div
         variants={iconVariants(1.5)}
         initial="initial"
-        animate="animate"
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
         <motion.div variants={iconVariants(2)}
         initial="initial"
-        animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <DiDjango className="text-7xl text-green-500" />
         </motion.div>
         <motion.div variants={iconVariants(2.5)}
         initial="initial"
-        animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiMysql className="text-7xl text-blue-400" />
         </motion.div>
         <motion.div variants={iconVariants(3)}
         initial="initial"
-        animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiCplusplus className="text-7xl text-blue-600" />
         </motion.div>
         <motion.div variants={iconVariants(2.5)}
         initial="initial"
-        animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <FaPython className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div variants={iconVariants(3)}
         initial="initial"
-        animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <FaHtml5 className="text-7xl text-red-500" />
         </motion.div>
         <motion.div variants={iconVariants(1.5)}
         initial="initial"
-        animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <FaCss3Alt className="text-7xl text-indigo-500" />
         </motion.div>
         <motion.div variants={iconVariants(2)}
         initial="initial"
-        animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiJavascript className="text-7xl text-yellow-500" />
         </motion.div>
       </motion.div>
