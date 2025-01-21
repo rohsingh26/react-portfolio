@@ -7,6 +7,9 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { motion } from "framer-motion";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
 
 const iconVariants = (duration) => ({
   initial: {y:-10},
@@ -40,15 +43,36 @@ const Technologies = () => {
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
-        <motion.div variants={iconVariants(2)}
+        <motion.div
+        variants={iconVariants(2.5)}
         initial="initial"
-        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
-            <DiDjango className="text-7xl text-green-500" />
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaNodeJs className="text-7xl text-[#339933]" />
+        </motion.div>
+        <motion.div
+        variants={iconVariants(3.5)}
+        initial="initial"
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiExpress className="text-7xl text-neutral-600" />
+        </motion.div>
+        <motion.div
+        variants={iconVariants(3)}
+        initial="initial"
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiMongodb className="text-7xl text-[#47A248]" />
         </motion.div>
         <motion.div variants={iconVariants(2.5)}
         initial="initial"
         animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiMysql className="text-7xl text-blue-400" />
+        </motion.div>
+        <motion.div variants={iconVariants(2)}
+        initial="initial"
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
+            <DiDjango className="text-7xl text-green-500" />
         </motion.div>
         <motion.div variants={iconVariants(3)}
         initial="initial"

@@ -3,9 +3,9 @@ import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 
-export const HERO_CONTENT = `I am a passionate full-stack developer with expertise in front-end technologies like React and Tailwind CSS, and back-end technologies such as Django, SQL, and Python, enabling me to design robust and efficient server-side solutions. My knowledge of C++ enhances my problem-solving abilities, allowing me to tackle challenges with precision. My goal is to build innovative applications that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full-stack developer with expertise in front-end technologies like React and Tailwind CSS, and back-end technologies such as Node.js, Express.js, MongoDB, Django, SQL, and Python. This diverse skill set enables me to design and build robust, scalable, and efficient server-side solutions. My proficiency in C++ strengthens my problem-solving abilities, allowing me to approach challenges with precision and creativity. My goal is to develop innovative applications that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full-stack software developer with a passion for crafting efficient and user-friendly web applications. My expertise include front-end technologies like React and Tailwind CSS, and back-end technologies such as Django, Python, SQL, SQLite, and MySQL. My journey in web development began with a deep curiosity for how systems work, evolving into a career where I constantly strive to learn, adapt, and tackle new challenges. I enhance my problem-solving abilities by practicing LeetCode questions daily, which helps me approach complex problems with precision. I thrive in collaborative environments and take pride in delivering high-quality solutions. Outside of coding, I stay active, explore emerging technologies, and contribute to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile full-stack software developer with a passion for crafting efficient and user-friendly web applications. My expertise includes front-end technologies like React and Tailwind CSS, and back-end technologies such as Django, Python, Node.js, Express.js, MongoDB, SQL (including SQLite and MySQL). My journey into web development began with a deep curiosity about how systems work, which has evolved into a fulfilling career where I continuously strive to learn, adapt, and tackle new challenges. I enhance my problem-solving skills by solving LeetCode problems daily, allowing me to approach complex issues with precision and creativity. I thrive in collaborative environments and take pride in delivering high-quality solutions. Outside of coding, I stay active, explore emerging technologies, and contribute to open-source projects.`;
 
 export const EXPERIENCES = [
   {
@@ -17,7 +17,7 @@ export const EXPERIENCES = [
   },
   {
     year: "Nov 2023 - Dec 2023",
-    role: "Frontend Web Development Intern",
+    role: "Frontend Web Developer Intern",
     company: "Motion Cut",
     description: `I have designed and developed several front-end projects, including a weather app, e-commerce webpage, calculator, and registration form, while gaining experience in deploying them on GitHub. I specialize in using HTML, CSS, and JavaScript to build dynamic and user-friendly client-side applications. Additionally, I focus on improving internal tools to boost team productivity and foster collaboration within the organization.`,
     technologies: ["HTML", "CSS", "JavaScript", "GitHub", ],
@@ -26,7 +26,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "BIT Connect - Real-time chat app",
+    title: "BIT Connect - Real-Time Chat App",
     image: project1,
     description:
       "Developed a real-time chat web application for college students using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io for seamless real-time communication. This platform enables juniors and seniors to interact, ask questions, and resolve doubts effectively. The app features an user-friendly interface, instant messaging, and scalability to handle multiple users simultaneously.",
@@ -47,7 +47,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
-    title: "QuickCart - an E-commerce website",
+    title: "QuickCart - An E-Commerce Website",
     image: project4,
     description:
       "Created Quick Cart, an e-commerce website using HTML, CSS, and JavaScript. This project focuses on an intuitive front-end design, featuring a responsive layout, product listings, and interactive features like cart management. Quick Cart demonstrates my ability to build user-friendly and visually appealing web interfaces tailored for e-commerce platforms",
@@ -56,7 +56,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Sannidhi Road, Basavanagudi, Bangalore, Karnataka - 560004 ",
+  address: "Basavanagudi, Bangalore, Karnataka, India - 560004 ",
   phoneNo: "+91 8207523728 ",
   email: "rohsingh26@gmail.com",
 };
