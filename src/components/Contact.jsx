@@ -3,11 +3,10 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   const emailSubject = "Collaboration Inquiry";
-  const emailBody = "Hi Rohit, I’d like to discuss..."; // Pre-filled email content
+  const emailBody = "Hi Rohit, I’d like to discuss...";
 
   return (
     <div className="border-b border-neutral-900 pb-20">
-      {/* Heading */}
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -17,7 +16,6 @@ const Contact = () => {
         Get in Touch
       </motion.h2>
       
-      {/* Introductory Message */}
       <div className="text-center my-6">
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +34,6 @@ const Contact = () => {
         </a>
       </div>
       
-      {/* Contact Details */}
       <div className="text-center tracking-tighter">
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}

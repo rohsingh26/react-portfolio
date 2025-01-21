@@ -17,7 +17,7 @@ export const EXPERIENCES = [
   },
   {
     year: "Nov 2023 - Dec 2023",
-    role: "Frontend Web Developer Intern",
+    role: "Front-End Web Developer Intern",
     company: "Motion Cut",
     description: `I have designed and developed several front-end projects, including a weather app, e-commerce webpage, calculator, and registration form, while gaining experience in deploying them on GitHub. I specialize in using HTML, CSS, and JavaScript to build dynamic and user-friendly client-side applications. Additionally, I focus on improving internal tools to boost team productivity and foster collaboration within the organization.`,
     technologies: ["HTML", "CSS", "JavaScript", "GitHub", ],
