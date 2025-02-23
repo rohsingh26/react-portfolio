@@ -1,11 +1,11 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project4 from "../assets/projects/project-4.png";
 
 export const HERO_CONTENT = `I am a passionate full-stack developer with expertise in front-end technologies like React and Tailwind CSS, and back-end technologies such as Node.js, Express.js, MongoDB, Django, SQL, and Python. This diverse skill set enables me to design and build robust, scalable, and efficient server-side solutions. My proficiency in C++ strengthens my problem-solving abilities, allowing me to approach challenges with precision and creativity. My goal is to develop innovative applications that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full-stack software developer with a passion for crafting efficient and user-friendly web applications. My expertise includes front-end technologies like React and Tailwind CSS, and back-end technologies such as Django, Python, Node.js, Express.js, MongoDB, SQL (including SQLite and MySQL). My journey into web development began with a deep curiosity about how systems work, which has evolved into a fulfilling career where I continuously strive to learn, adapt, and tackle new challenges. I enhance my problem-solving skills by solving LeetCode problems daily, allowing me to approach complex issues with precision and creativity. I thrive in collaborative environments and take pride in delivering high-quality solutions. Outside of coding, I stay active, explore emerging technologies, and contribute to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer with a passion for building efficient, user-friendly web applications. My expertise spans front-end technologies like React and Tailwind CSS, as well as back-end technologies such as Django, Python, Node.js, Express.js, and databases like MongoDB, SQLite, and MySQL. My journey into web development began with a deep curiosity about how systems work, which has evolved into a continuous pursuit of learning and problem-solving. I sharpen my algorithmic thinking by solving LeetCode problems daily, enabling me to approach complex challenges with precision and creativity. I thrive in collaborative environments, delivering high-quality solutions that merge functionality with seamless user experience. Beyond coding, I stay active, explore emerging technologies, solve daily DSA problems, and contribute to open-source projects.`;
 
 export const EXPERIENCES = [
   {
