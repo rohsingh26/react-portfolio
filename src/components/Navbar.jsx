@@ -1,28 +1,43 @@
 import { useState, useEffect, useRef } from "react";
 import { FaLinkedin, FaGithub, FaCode } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { GiHamburgerMenu } from "react-icons/gi"; // Import hamburger icon
+import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/logo.jpg";
+import animationGif from "../assets/animation.gif";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null); // Reference to the menu
+  const [showAnimation, setShowAnimation] = useState(false);
+  const [text, setText] = useState("");
+  const menuRef = useRef(null);
 
-  // Function to handle smooth scrolling
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-    setMenuOpen(false); // Close menu after clicking
+    setMenuOpen(false);
   };
 
-  // Function to refresh the page when clicking on the RSI logo
   const handleLogoClick = () => {
-    window.location.reload();
+    setShowAnimation(true);
+    setText("");
+
+    setTimeout(() => {
+      const fullText = "Welcome to my profile";
+      let i = 0;
+      const interval = setInterval(() => {
+        setText(fullText.slice(0, i + 1)); // Correct way to slice text properly
+        i++;
+        if (i === fullText.length) clearInterval(interval);
+      }, 100);
+    }, 1000);
+
+    setTimeout(() => {
+      window.location.reload();
+    }, 4000);
   };
 
-  // Close menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -38,15 +53,24 @@ const Navbar = () => {
 
   return (
     <nav className="mb-6 flex items-center justify-between py-4">
-      {/* Logo - Refreshes Page on Click */}
       <div className="flex flex-shrink-0 items-center">
         <img
           className="mx-2 w-8 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 hover:brightness-50"
           src={logo}
           alt="logo"
-          onClick={handleLogoClick} // Refresh on click
+          onClick={handleLogoClick}
         />
       </div>
+
+      {showAnimation && (
+        <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50">
+          <img src={animationGif} className="absolute inset-0 w-full h-full object-cover" alt="animation" />
+          <div className="absolute bottom-10 text-center text-gray-300 text-2xl font-bold">
+            <p className="text-gray-400">{text}</p> {/* Text animation appears here */}
+            <p className="text-gray-400 text-xl mt-2">Rohit Singh</p>
+          </div>
+        </div>
+      )}
 
       <div className="m-6 flex items-center justify-center gap-3 text-xl">
         <a href="https://www.linkedin.com/in/rohsingh26" target="blank" rel="noopener noreferrer" className="hover:text-blue-700">
@@ -62,13 +86,11 @@ const Navbar = () => {
           <FaSquareXTwitter />
         </a>
 
-        {/* Hamburger Menu */}
         <div className="relative" ref={menuRef}>
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-white focus:outline-none">
             <GiHamburgerMenu />
           </button>
 
-          {/* Dropdown Menu */}
           {menuOpen && (
             <div className="absolute right-0 mt-2 w-40 rounded-md bg-gray-900 p-2 shadow-lg">
               <button onClick={() => handleScroll("about")} className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">About Me</button>
