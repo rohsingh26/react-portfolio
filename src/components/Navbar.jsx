@@ -24,18 +24,18 @@ const Navbar = () => {
     setText("");
 
     setTimeout(() => {
-      const fullText = "Welcome to my profile";
+      const fullText = "Welcome to my profile...";
       let i = 0;
       const interval = setInterval(() => {
         setText(fullText.slice(0, i + 1)); // Correct way to slice text properly
         i++;
         if (i === fullText.length) clearInterval(interval);
       }, 100);
-    }, 1000);
+    }, 300);
 
     setTimeout(() => {
       window.location.reload();
-    }, 4000);
+    }, 3500);
   };
 
   useEffect(() => {

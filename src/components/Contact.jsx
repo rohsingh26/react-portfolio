@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   const emailSubject = "Collaboration Inquiry";
-  const emailBody = "Hi Rohit, I’d like to discuss...";
+  const emailBody = "Hi Rohit, I’d like to discuss... ";
 
   return (
     <div className="border-b border-neutral-900 pb-20">
