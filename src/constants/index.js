@@ -48,7 +48,7 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "API",],
   },
   {
-    title: "Object Recognisition System",
+    title: "Object Recognition System",
     image: project5,
     description:
       "Built an Object Recognition System using the ESP32-CAM module for live video streaming and real-time object detection. Programmed the ESP32 microcontroller in C++ and utilized Python for object recognition. Used NumPy to convert bit arrays into images and OpenCV datasets for object detection. Implemented multi-threading to display live streaming and detection outputs in separate windows, ensuring efficient concurrent processing.",
