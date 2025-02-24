@@ -31,7 +31,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "Developed BIT Connect, a real-time chat web application for college students using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io for seamless real-time communication. This platform enables juniors and seniors to interact, ask questions, and resolve doubts effectively. The app features an user-friendly interface, instant messaging, and scalability to handle multiple users simultaneously.",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io",],
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket-io",],
   },
   {
     title: "BIT Discuss",
