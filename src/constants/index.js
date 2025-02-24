@@ -31,7 +31,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "Developed BIT Connect, a real-time chat web application for college students using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io for seamless real-time communication. This platform enables juniors and seniors to interact, ask questions, and resolve doubts effectively. The app features an user-friendly interface, instant messaging, and scalability to handle multiple users simultaneously.",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket-io",],
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io",],
   },
   {
     title: "BIT Discuss",
@@ -52,7 +52,7 @@ export const PROJECTS = [
     image: project5,
     description:
       "Built an Object Recognition System using the ESP32-CAM module for live video streaming and real-time object detection. Programmed the ESP32 microcontroller in C++ and utilized Python for object recognition. Used NumPy to convert bit arrays into images and OpenCV datasets for object detection. Implemented multi-threading to display live streaming and detection outputs in separate windows, ensuring efficient concurrent processing.",
-    technologies: ["Python","C++", "OpenCV", "NumPy", "ESP32-CAM",],
+    technologies: ["Python", "C++", "ESP32-CAM", "OpenCV", "NumPy",],
   },
   {
     title: "QuickCart - An E-Commerce Website",
