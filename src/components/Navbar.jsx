@@ -24,18 +24,18 @@ const Navbar = () => {
     setText("");
 
     setTimeout(() => {
-      const fullText = "Welcome to my profile...";
+      const fullText = "Thank you for visiting my profile...";
       let i = 0;
       const interval = setInterval(() => {
         setText(fullText.slice(0, i + 1)); // Correct way to slice text properly
         i++;
         if (i === fullText.length) clearInterval(interval);
       }, 100);
-    }, 300);
+    }, 200);
 
     setTimeout(() => {
       window.location.reload();
-    }, 3500);
+    }, 4500);
   };
 
   useEffect(() => {
@@ -66,8 +66,9 @@ const Navbar = () => {
         <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50">
           <img src={animationGif} className="absolute inset-0 w-full h-full object-cover" alt="animation" />
           <div className="absolute bottom-10 text-center text-gray-300 text-2xl font-bold">
+            <p className="text-gray-600 text-xl mt-2">Oh, you found it!!!</p>
             <p className="text-gray-400">{text}</p> {/* Text animation appears here */}
-            <p className="text-gray-400 text-xl mt-2">Rohit Singh</p>
+            <p className="text-gray-800 text-xl mt-2">Rohit Singh</p>
           </div>
         </div>
       )}
