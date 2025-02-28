@@ -4,6 +4,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/logo.jpg";
 import animationGif from "../assets/animation.gif";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,10 +66,16 @@ const Navbar = () => {
       {showAnimation && (
         <div className="fixed inset-0 flex flex-col items-center justify-center bg-black z-50">
           <img src={animationGif} className="absolute inset-0 w-full h-full object-cover" alt="animation" />
-          <div className="absolute bottom-10 text-center text-gray-300 text-2xl font-bold">
-            <p className="text-gray-600 text-xl mt-2">Oh, you found it!!!</p>
+          <div className="absolute bottom-4 text-center text-gray-300 text-2xl font-bold">
+            <motion.p
+            className="text-xl mt-2"
+            initial={{ color: "#D1D5DB" }} // gray-300
+            animate={{ color: "#374151" }} // gray-700
+            transition={{ duration: 2.5 }} // Adjust duration for smooth effect
+            >
+            Oh, you found it!!!
+            </motion.p>
             <p className="text-gray-400">{text}</p> {/* Text animation appears here */}
-            <p className="text-gray-800 text-xl mt-2">Rohit Singh</p>
           </div>
         </div>
       )}
