@@ -211,7 +211,7 @@ const Technologies = () => {
         initial="initial"
         animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
         className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiGooglecloud className="text-7xl text-blue-600" />
+            <SiGooglecloud className="text-7xl text-red-700" />
         </motion.div>
 
       </motion.div>
