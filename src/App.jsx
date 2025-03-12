@@ -20,8 +20,8 @@ const App = () => {
         <section id="experience"><Experience /></section>
         <section id="projects"><Projects /></section>
         <section id="contact"><Contact /></section>
-        <section id="globe"><Globe /></section>
       </div>
+      <Globe />
     </div>
   );
 };
