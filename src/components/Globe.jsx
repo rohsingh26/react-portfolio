@@ -38,20 +38,16 @@ const Globe = () => {
         className="w-full h-full"
         gl={{ alpha: true, antialias: true, preserveDrawingBuffer: true }}
       >
-        {/* Stars for subtle effect */}
         <Stars radius={80} depth={50} count={5000} factor={4} fade speed={1} />
 
-        {/* Ambient light for soft glow */}
         <ambientLight intensity={10} />
 
-        {/* Bright directional light for dramatic effect */}
         <directionalLight 
-          position={[4, 2, -2]} // Larger coverage
-          intensity={8.5} // Increased brightness
+          position={[4, 2, -2]}
+          intensity={8.5}
           castShadow
         />
 
-        {/* Additional spotlight to enhance glow */}
         <spotLight 
           position={[-5, 5, 5]} 
           angle={0.4} 
@@ -61,20 +57,18 @@ const Globe = () => {
           castShadow
         />
 
-        {/* Rotating Globe */}
         <mesh ref={earthRef} rotation={[0, 0, 0]}>
           <sphereGeometry args={[2.7, 64, 64]} />
           <meshStandardMaterial
             map={texture}
-            emissive={"#444444"} // Slight glow effect
-            emissiveIntensity={0.1} // Increased intensity
+            emissive={"#444444"}
+            emissiveIntensity={0.1}
             roughness={0.5}
             metalness={0.1}
             transparent={true}
           />
         </mesh>
 
-        {/* Smooth Zoom & Rotation */}
         <OrbitControls
           autoRotate
           autoRotateSpeed={rotationSpeed}
