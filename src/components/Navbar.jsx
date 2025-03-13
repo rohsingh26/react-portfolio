@@ -80,30 +80,43 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center gap-3 text-xl">
-          <a href="https://www.linkedin.com/in/rohsingh26" target="blank" rel="noopener noreferrer" className="hover:text-blue-700">
+          <a href="https://www.linkedin.com/in/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700">
             <FaLinkedin />
           </a>
-          <a href="https://www.github.com/rohsingh26" target="blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <a href="https://www.github.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
             <FaGithub />
           </a>
-          <a href="https://www.leetcode.com/rohsingh26" target="blank" rel="noopener noreferrer" className="hover:text-yellow-500">
+          <a href="https://www.leetcode.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">
             <FaCode />
           </a>
-          <a href="https://www.twitter.com/rohsingh26" target="blank" rel="noopener noreferrer" className="hover:text-gray-500">
+          <a href="https://www.twitter.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500">
             <FaSquareXTwitter />
           </a>
           <div className="relative" ref={menuRef}>
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-white focus:outline-none">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className={`text-white focus:outline-none relative top-0.5 transition-transform duration-300 ${menuOpen ? "rotate-90" : ""}`}
+            >
               <GiHamburgerMenu />
             </button>
             {menuOpen && (
               <div className="absolute right-0 mt-2 w-40 rounded-md bg-gray-900 p-2 shadow-lg">
-                <button onClick={() => handleScroll("home")} className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">Home</button>
-                <button onClick={() => handleScroll("about")} className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">About Me</button>
-                <button onClick={() => handleScroll("technologies")} className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">Technologies</button>
-                <button onClick={() => handleScroll("experience")} className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">Experience</button>
-                <button onClick={() => handleScroll("projects")} className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">Projects</button>
-                <button onClick={() => handleScroll("contact")} className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">Contact Me</button>
+                {[
+                  "home",
+                  "about",
+                  "technologies",
+                  "experience",
+                  "projects",
+                  "contact",
+                ].map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => handleScroll(item)}
+                    className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700"
+                  >
+                    {item.charAt(0).toUpperCase() + item.slice(1).replace("_", " ")}
+                  </button>
+                ))}
               </div>
             )}
           </div>

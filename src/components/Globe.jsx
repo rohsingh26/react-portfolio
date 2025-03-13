@@ -8,7 +8,7 @@ import EarthTexture from "../assets/earth.jpeg";
 const Globe = () => {
   const earthRef = useRef();
   const texture = useLoader(TextureLoader, EarthTexture);
-  const [rotationSpeed, setRotationSpeed] = useState(200);
+  const [rotationSpeed, setRotationSpeed] = useState(80);
 
   // Hardcoded location for Bangalore
   const BANGALORE_LAT = 12.971599;
@@ -29,11 +29,11 @@ const Globe = () => {
   useEffect(() => {
     // Adjust rotation speed gradually
     const speedStages = [
-      { speed: 100, delay: 1000 },
+      { speed: 60, delay: 1000 },
       { speed: 50, delay: 2000 },
-      { speed: 20, delay: 6000 },
-      { speed: 10, delay: 8000 },
-      { speed: 5.5, delay: 10000 },
+      { speed: 20, delay: 4000 },
+      { speed: 10, delay: 6000 },
+      { speed: 5, delay: 8000 },
     ];
 
     speedStages.forEach(({ speed, delay }) => {
