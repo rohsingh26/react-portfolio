@@ -54,7 +54,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="bg-stone-300 hover:bg-stone-400 text-stone-800 px-2 py-1 text-xs rounded shadow-sm transition-all"
                 >
-                  Link to Repository
+                  Open Repository
                 </a>
                 {project.liveDemo && (
                 <a 
