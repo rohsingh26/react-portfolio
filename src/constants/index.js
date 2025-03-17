@@ -30,6 +30,15 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "To-Do App",
+    image: project6,
+    description:
+      "Developed a dynamic To-Do App using Vue.js, enabling users to create, edit, and delete tasks categorized as Personal or Professional. The app allows users to input their name and provides a user-friendly interface to manage tasks efficiently. Tasks can be marked as completed by clicking on them, which neatly strikes them out. Additionally, users can modify task names even after adding them, offering flexibility. A key feature is the use of local storage to save data directly on the device, ensuring tasks persist across sessions for a seamless and reliable user experience.",
+    technologies: ["Vue.js", "JavaScript", "CSS", "JSON",],
+    repo: "https://github.com/rohsingh26/todo-app",
+    liveDemo: "https://todo-app-rohit-singhs-projects-86330224.vercel.app/",
+  },
+  {
     title: "BIT Connect - Real-Time Chat App",
     image: project1,
     description:
@@ -44,15 +53,6 @@ export const PROJECTS = [
       "Developed BIT Discuss, a Twitter-inspired web application for college students, using Django for the back-end, SQLite for the database, and HTML/CSS for the front-end. The platform enables juniors and seniors to post doubts or discussion topics, fostering interaction and collaboration. Other users can comment on posts, providing insights and solutions.",
     technologies: ["Python", "Django","SQLite", "HTML", "CSS",],
     repo: "https://github.com/rohsingh26/bitdiscuss",
-  },
-  {
-    title: "To-Do App",
-    image: project6,
-    description:
-      "Developed a dynamic To-Do App using Vue.js, enabling users to create, edit, and delete tasks categorized as Personal or Professional. The app allows users to input their name and provides a user-friendly interface to manage tasks efficiently. Tasks can be marked as completed by clicking on them, which neatly strikes them out. Additionally, users can modify task names even after adding them, offering flexibility. A key feature is the use of local storage to save data directly on the device, ensuring tasks persist across sessions for a seamless and reliable user experience.",
-    technologies: ["Vue.js", "JavaScript", "CSS", "JSON",],
-    repo: "https://github.com/rohsingh26/todo-app",
-    liveDemo: "https://todo-app-rohit-singhs-projects-86330224.vercel.app/",
   },
   {
     title: "Expense Tracker",
