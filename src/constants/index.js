@@ -6,6 +6,7 @@ import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.png";
 import project7 from "../assets/projects/project-7.png";
 import project8 from "../assets/projects/project-8.png";
+import project0 from "../assets/projects/project-0.png";
 
 export const HERO_CONTENT = `I am a passionate full-stack developer with expertise in front-end technologies like React, Vue.js, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, MongoDB, Django, SQL, and Python. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications. This diverse skill set enables me to design and build robust, scalable, and efficient server-side solutions. My proficiency in C++ strengthens my problem-solving abilities, allowing me to approach challenges with precision and creativity. My goal is to develop innovative applications that drive business growth and deliver exceptional user experiences.`;
 
@@ -29,6 +30,15 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Optimized LeetCode Filtration Process",
+    image: project0,
+    description:
+      "Built a high-performance frontend-based filtration engine for LeetCode problems that eliminates the need for repeated backend API calls. Traditional implementations perform a server call for each applied filter (e.g., difficulty, topic, tags), leading to latency, increased server load, and higher infrastructure costs. My solution preloads all questions and tags once on the frontend and handles all filter operations within the browser using optimized data structures and algorithms.",
+    technologies: ["Vue.js", "Python", "JavaScript", "CSS",],
+    repo: "https://github.com/rohsingh26/LeetCode-Optimization",
+    liveDemo: "https://leetcode-optimization-rohit-singhs-projects-86330224.vercel.app/",
+  },
   {
     title: "To-Do App",
     image: project6,
