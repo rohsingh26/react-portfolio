@@ -5,12 +5,29 @@ import { FiLoader } from "react-icons/fi";
 const LoaderAnimation = () => {
   const [stage, setStage] = useState("loading");
   const [showWelcome, setShowWelcome] = useState(false);
+  const [welcomeText, setWelcomeText] = useState("");
 
   useEffect(() => {
-    const timers = [
-      setTimeout(() => setShowWelcome(true), 500),
-      setTimeout(() => setStage("done"), 5000),
-    ];
+    const timers = [];
+
+    timers.push(
+      setTimeout(() => {
+        setShowWelcome(true);
+
+        const fullText = "Welcome...";
+        let i = 0;
+        const interval = setInterval(() => {
+          setWelcomeText(fullText.slice(0, i + 1));
+          i++;
+          if (i === fullText.length) clearInterval(interval);
+        }, 150);
+      }, 500)
+    );
+
+    timers.push(
+      setTimeout(() => setStage("done"), 3200)
+    );
+
     return () => timers.forEach(clearTimeout);
   }, []);
 
@@ -30,23 +47,21 @@ const LoaderAnimation = () => {
         <div className="absolute bottom-[25%] z-30 text-center w-full">
           <motion.h1
             initial={{
-              opacity: 0,
-              color: "#FFEB3B",
-              textShadow: "0 0 10px rgba(255, 255, 0, 0.8)",
+            color: "#FDD835",
+            textShadow: "0 0 10px rgba(255, 235, 59, 0.8)",
             }}
             animate={{
-              opacity: 1,
-              color: "#F44336",
-              textShadow: "0 0 10px rgba(244, 67, 54, 0.8)",
+            color: "#F44336",
+            textShadow: "0 0 10px rgba(244, 67, 54, 0.8)",
             }}
             transition={{
-              duration: 1,
-              delay: 1,
-              ease: "easeOut",
+            duration: 1,
+            delay: 1,
+            ease: "easeOut",
             }}
-            className="text-4xl font-extrabold"
-          >
-            Welcome...
+            className="text-4xl font-extrabold drop-shadow-md font-mono">
+              {welcomeText}
+              <span className="animate-blink">|</span>
           </motion.h1>
         </div>
       )}
@@ -58,7 +73,7 @@ const LoaderAnimation = () => {
         >
           <FiLoader />
         </motion.div>
-        <p className="mt-2 text-lg text-white">Loading...</p>
+        <p className="mt-2 text-lg text-neutral-200">Loading...</p>
       </div>
     </div>
   );

@@ -30,11 +30,11 @@ const Navbar = () => {
         setText(fullText.slice(0, i + 1));
         i++;
         if (i === fullText.length) clearInterval(interval);
-      }, 100);
-    }, 200);
+      }, 120);
+    }, 150);
     setTimeout(() => {
       setShowAnimation(false);
-    }, 5000);
+    }, 4600);
   };
 
   useEffect(() => {
@@ -62,9 +62,11 @@ const Navbar = () => {
               animate={{ color: "#374151" }}
               transition={{ duration: 2.5 }}
             >
-              Oh, you found it!!!
+              Oh, you found it!
             </motion.p>
-            <p className="text-gray-400">{text}</p>
+            <p className="text-gray-400">{text}
+            <span className="animate-blink">|</span>
+            </p>
           </div>
         </div>
       )}

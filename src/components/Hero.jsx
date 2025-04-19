@@ -36,8 +36,7 @@ const Hero = () => {
                     variants={container(0)}
                     initial="hidden"
                     animate="visible"
-                    className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-sm tracking-tight text-transparent origin-left"
-                  >
+                    className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-sm tracking-tight text-transparent origin-left">
                     <Typewriter
                       words={["Full Stack Developer", "AI/ML Enthusiast", "Python Developer", "Problem Solver", "Tech Innovator"]}
                       loop={0}
@@ -48,6 +47,15 @@ const Hero = () => {
                       delaySpeed={1000}
                     />
                   </motion.p> </motion.span>
+                    <a
+                      href="https://drive.google.com/file/d/128aX-o1XeTTpMjkgszr7XhyWZRDW-vQL/view?usp=drivesdk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-10 flex items-center gap-2 text-neutral-400 text-lg font-medium hover:text-white transform hover:scale-110 transition-all duration-500 ease-in-out origin-left"
+                      style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                        <FiExternalLink size={18} />
+                        Download Resume
+                    </a>
                     <motion.p variants={container(1)}
                     initial="hidden"
                     animate="visible" 
@@ -61,22 +69,9 @@ const Hero = () => {
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="rounded-2xl max-w-full h-auto object-cover"
+              className="rounded-2xl max-w-full h-auto object-cover mb-8"
               src={ProfilePic}
               alt="Rohit Singh" />
-            </div>
-            <div className="flex items-center justify-center w-screen">
-              <div className="flex justify-center mt-4 mb-2">
-                <a
-                  href="https://drive.google.com/file/d/128aX-o1XeTTpMjkgszr7XhyWZRDW-vQL/view?usp=drivesdk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-neutral-400 text-lg font-medium hover:text-white transform hover:scale-110 transition-all duration-200 ease-in-out"
-                  style={{ fontFamily: "'JetBrains Mono', monospace" }}>
-                    <FiExternalLink size={18} />
-                    Download Resume
-                </a>
-              </div>
             </div>
         </div>
     </div>
