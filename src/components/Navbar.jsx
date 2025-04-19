@@ -99,26 +99,37 @@ const Navbar = () => {
             >
               <GiHamburgerMenu />
             </button>
-            {menuOpen && (
-              <div className="absolute right-0 mt-2 w-40 rounded-md bg-gray-900 p-2 shadow-lg">
-                {[
-                  "home",
-                  "about",
-                  "technologies",
-                  "experience",
-                  "projects",
-                  "contact",
-                ].map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => handleScroll(item)}
-                    className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700"
-                  >
-                    {item.charAt(0).toUpperCase() + item.slice(1).replace("_", " ")}
-                  </button>
-                ))}
-              </div>
-            )}
+              {menuOpen && (
+                <div className="absolute right-0 mt-2 w-40 rounded-md bg-gray-900 p-2 shadow-lg">
+                  {[
+                    "home",
+                    "about",
+                    "technologies",
+                    "experience",
+                    "projects",
+                    "contact",
+                    "Resume",
+                  ].map((item) =>
+                  item === "Resume" ? (
+                    <a
+                      key={item}
+                      href="https://drive.google.com/file/d/128aX-o1XeTTpMjkgszr7XhyWZRDW-vQL/view?usp=drivesdk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
+                        {item}
+                    </a>
+                    ) : (
+                    <button
+                      key={item}
+                      onClick={() => handleScroll(item)}
+                      className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
+                        {item.charAt(0).toUpperCase() + item.slice(1).replace("_", " ")}
+                    </button>
+                    )
+                  )}
+                </div>
+              )}
           </div>
         </div>
       </nav>
