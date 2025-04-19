@@ -23,7 +23,6 @@ const Navbar = () => {
   const handleLogoClick = () => {
     setShowAnimation(true);
     setText("");
-
     setTimeout(() => {
       const fullText = "Thanks for visiting my profile...";
       let i = 0;
@@ -33,10 +32,9 @@ const Navbar = () => {
         if (i === fullText.length) clearInterval(interval);
       }, 100);
     }, 200);
-
     setTimeout(() => {
-      window.location.reload();
-    }, 4500);
+      setShowAnimation(false);
+    }, 5000);
   };
 
   useEffect(() => {
@@ -99,17 +97,17 @@ const Navbar = () => {
             >
               <GiHamburgerMenu />
             </button>
-              {menuOpen && (
-                <div className="absolute right-0 mt-2 w-40 rounded-md bg-gray-900 p-2 shadow-lg">
-                  {[
-                    "home",
-                    "about",
-                    "technologies",
-                    "experience",
-                    "projects",
-                    "contact",
-                    "Resume",
-                  ].map((item) =>
+            {menuOpen && (
+              <div className="absolute right-0 mt-2 w-40 rounded-md bg-gray-900 p-2 shadow-lg">
+                {[
+                  "home",
+                  "about",
+                  "technologies",
+                  "experience",
+                  "projects",
+                  "contact",
+                  "Resume",
+                ].map((item) =>
                   item === "Resume" ? (
                     <a
                       key={item}
@@ -117,19 +115,19 @@ const Navbar = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
-                        {item}
+                      {item}
                     </a>
-                    ) : (
+                  ) : (
                     <button
                       key={item}
                       onClick={() => handleScroll(item)}
                       className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
-                        {item.charAt(0).toUpperCase() + item.slice(1).replace("_", " ")}
+                      {item.charAt(0).toUpperCase() + item.slice(1).replace("_", " ")}
                     </button>
-                    )
-                  )}
-                </div>
-              )}
+                  )
+                )}
+              </div>
+            )}
           </div>
         </div>
       </nav>
