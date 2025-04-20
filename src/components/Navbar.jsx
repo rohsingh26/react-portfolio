@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { FaLinkedin, FaGithub, FaCode } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaEnvelope, FaSquareXTwitter } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../assets/logo.jpg";
 import animationGif from "../assets/animation.gif";
@@ -80,22 +80,25 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center gap-3 text-xl">
-          <a href="https://www.linkedin.com/in/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700">
+          <a href="mailto:rohsingh26@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 hover:scale-110 transition-all duration-200 ease-in-out">
+            <FaEnvelope />
+          </a>
+          <a href="https://www.linkedin.com/in/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 hover:scale-110 transition-all duration-200 ease-in-out">
             <FaLinkedin />
           </a>
-          <a href="https://www.github.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">
+          <a href="https://www.github.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 hover:scale-110 transition-all duration-200 ease-in-out">
             <FaGithub />
           </a>
-          <a href="https://www.leetcode.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">
+          <a href="https://www.leetcode.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 hover:scale-110 transition-all duration-200 ease-in-out">
             <FaCode />
           </a>
-          <a href="https://www.twitter.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500">
+          <a href="https://www.twitter.com/rohsingh26" target="_blank" rel="noopener noreferrer" className="hover:text-gray-500 hover:scale-110 transition-all duration-200 ease-in-out">
             <FaSquareXTwitter />
           </a>
           <div className="relative" ref={menuRef}>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className={`text-white focus:outline-none relative top-0.5 transition-transform duration-300 ${menuOpen ? "rotate-90" : ""}`}
+              className={`hover:text-gray-300 hover:scale-110 text-white focus:outline-none relative top-0.5 transition-transform duration-300 ${menuOpen ? "rotate-90" : ""}`}
             >
               <GiHamburgerMenu />
             </button>
@@ -116,14 +119,14 @@ const Navbar = () => {
                       href="https://drive.google.com/file/d/128aX-o1XeTTpMjkgszr7XhyWZRDW-vQL/view?usp=drivesdk"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
+                      className="hover:scale-110 transition-all duration-200 ease-in-out block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
                       {item}
                     </a>
                   ) : (
                     <button
                       key={item}
                       onClick={() => handleScroll(item)}
-                      className="block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
+                      className="hover:scale-110 transition-all duration-200 ease-in-out block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
                       {item.charAt(0).toUpperCase() + item.slice(1).replace("_", " ")}
                     </button>
                   )

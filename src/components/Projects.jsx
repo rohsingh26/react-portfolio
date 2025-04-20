@@ -26,7 +26,7 @@ const Projects = () => {
                 width={200} 
                 height={200} 
                 alt={project.title} 
-                className="mb-6 rounded" 
+                className="hover:scale-110 transition-all duration-200 ease-in-out mb-6 rounded" 
               />
             </motion.div>
             <motion.div
@@ -52,7 +52,7 @@ const Projects = () => {
                   href={project.repo} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="bg-stone-300 hover:bg-stone-400 text-stone-800 px-2 py-1 text-xs rounded shadow-sm transition-all"
+                  className="hover:scale-110 transition-all duration-200 ease-in-out bg-stone-300 hover:bg-stone-400 text-stone-800 px-2 py-1 text-xs rounded shadow-sm transition-all"
                 >
                   Open Repository
                 </a>
@@ -61,7 +61,7 @@ const Projects = () => {
                   href={project.liveDemo} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="bg-green-200 hover:bg-green-300 text-green-800 px-2 py-1 text-xs rounded shadow-sm transition-all"
+                  className="hover:scale-110 transition-all duration-200 ease-in-out bg-green-200 hover:bg-green-300 text-green-800 px-2 py-1 text-xs rounded shadow-sm transition-all"
                 >
                   Live Demo
                 </a>

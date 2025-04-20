@@ -5,7 +5,6 @@ import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.png";
 import project7 from "../assets/projects/project-7.png";
-import project8 from "../assets/projects/project-8.png";
 import project0 from "../assets/projects/project-0.png";
 
 export const HERO_CONTENT = `I am a passionate full-stack developer with expertise in front-end technologies like React, Vue.js, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, MongoDB, Django, SQL, and Python. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications.
@@ -95,15 +94,6 @@ export const PROJECTS = [
     liveDemo: "https://rohsingh26.github.io/Weather-App/",
   },
   {
-    title: "Basic Calculator Web App",
-    image: project8,
-    description:
-      "Created a Basic Calculator using HTML, CSS, and JavaScript, allowing users to perform addition, subtraction, multiplication, and division. It features a simple and responsive UI, making calculations quick and easy. This project showcases my skills in frontend development and JavaScript functionality for handling arithmetic operations.",
-    technologies: ["HTML", "CSS", "JavaScript", "GitHub",],
-    repo: "https://github.com/rohsingh26/Calculator",
-    liveDemo: "https://rohsingh26.github.io/Calculator/",
-  },
-  {
     title: "QuickCart - An E-Commerce Website",
     image: project4,
     description:
@@ -115,7 +105,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Basavanagudi, Bangalore, Karnataka, India - 560004 ",
+  address: "Bengaluru, Karnataka, India - 560078",
   phoneNo: "+91 8207523728 ",
   email: "rohsingh26@gmail.com",
 };
