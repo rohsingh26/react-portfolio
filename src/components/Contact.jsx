@@ -28,7 +28,7 @@ const Contact = () => {
           href={`mailto:${CONTACT.email}?subject=${encodeURIComponent(
             emailSubject
           )}&body=${encodeURIComponent(emailBody)}`}
-          className="hover:scale-110 transition-all duration-400 ease-in-out mb-10 inline-block px-6 py-3 bg-blue-600 text-white text-base rounded-lg hover:bg-blue-800"
+          className="hover:scale-110 transition-all duration-400 ease-in-out mb-10 inline-block px-4 py-2 bg-blue-600 text-white text-base rounded-lg hover:bg-blue-800"
         >
           Send Message
         </a>
