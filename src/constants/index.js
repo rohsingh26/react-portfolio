@@ -22,7 +22,7 @@ export const EXPERIENCES = [
     year: "July 2025 - Present",
     role: "Software Developer",
     company: "Gray Matter",
-    description: `I'm working as a Software Developer at Gray Matter, an Indian startup based in Bangalore. I build full-stack applications using React.js for the frontend, Node.js and Express.js for the backend development, and MongoDB as the database, while using Git and GitHub for version control and team collaboration`,
+    description: `I'm working as a Software Developer at Gray Matter, an Indian startup based in Bangalore. I build full-stack applications using React.js for the frontend, Node.js and Express.js for the backend development, and MongoDB as the database, while using Git and GitHub for version control and team collaboration.`,
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Postman", "GitHub","REST API",],
   },
   {
