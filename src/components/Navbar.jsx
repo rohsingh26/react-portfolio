@@ -24,7 +24,7 @@ const Navbar = () => {
     setShowAnimation(true);
     setText("");
     setTimeout(() => {
-      const fullText = "Thanks for visiting my profile...";
+      const fullText = "Thanks for visiting my profile!...";
       let i = 0;
       const interval = setInterval(() => {
         setText(fullText.slice(0, i + 1));
@@ -107,8 +107,8 @@ const Navbar = () => {
                 {[
                   "home",
                   "about",
-                  "technologies",
                   "experience",
+                  "technologies",
                   "projects",
                   "contact",
                   "Resume",

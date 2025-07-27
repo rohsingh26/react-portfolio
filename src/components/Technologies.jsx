@@ -21,7 +21,7 @@ import { FaLinux } from "react-icons/fa";
 import { SiPycharm } from "react-icons/si";
 import { SiOpencv } from "react-icons/si";
 import { SiNumpy } from "react-icons/si";
-import { SiAngular } from "react-icons/si";
+import { SiBootstrap } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 
 
@@ -67,18 +67,18 @@ const Technologies = () => {
             <FaVuejs className="text-7xl text-green-500" />
         </motion.div>
         <motion.div
-        variants={iconVariants(1.5)}
-        initial="initial"
-        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
-        className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiAngular className="text-7xl text-red-600" />
-        </motion.div>
-        <motion.div
         variants={iconVariants(2)}
         initial="initial"
         animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiTailwindcss className="text-7xl text-sky-400" />
+        </motion.div>
+        <motion.div
+        variants={iconVariants(1.5)}
+        initial="initial"
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiBootstrap className="text-7xl text-purple-700" />
         </motion.div>
         <motion.div
         variants={iconVariants(2.5)}

@@ -7,28 +7,30 @@ import project6 from "../assets/projects/project-6.png";
 import project7 from "../assets/projects/project-7.png";
 import project0 from "../assets/projects/project-0.png";
 
-export const HERO_CONTENT = `I am a passionate full-stack developer with expertise in front-end technologies like React, Vue.js, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, MongoDB, Django, SQL, and Python. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications.
+export const HERO_CONTENT = `I am a Full-stack Developer with expertise in front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, Django, and Python, along with databases like MongoDB and MySQL. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications.
 
 This diverse skill set enables me to design and build robust, scalable, and efficient server-side solutions. My proficiency in C++ strengthens my problem-solving abilities, allowing me to approach challenges with precision and creativity. My goal is to develop innovative applications that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full-stack developer with a passion for building efficient, user-friendly web applications. My expertise spans front-end technologies like React, Vue.js, and Tailwind CSS, as well as back-end technologies such as Django, Python, Node.js, Express.js, and databases like MongoDB, SQLite, and MySQL. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. I also have hands-on experience with Google Cloud Platform (GCP), which I use to deploy and manage scalable cloud-based applications. 
+export const ABOUT_TEXT = `I am a dedicated and versatile Full-stack developer with a passion for building efficient, user-friendly web applications. My expertise spans front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, as well as back-end technologies such as Node.js, Express.js, Django, and Python. I have experience working with databases like MongoDB, SQLite, and MySQL. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have hands-on experience with Google Cloud Platform (GCP) gained during my internship.
 
-My journey into software development began with a deep curiosity about how systems work, which has evolved into a continuous pursuit of learning and problem-solving. I sharpen my algorithmic thinking by solving LeetCode problems daily, enabling me to approach complex challenges with precision and creativity. I thrive in collaborative environments, delivering high-quality solutions that merge functionality with seamless user experience. Beyond coding, I stay active, explore emerging technologies, solve daily DSA problems, and contribute to open-source projects. My goal is to develop innovative applications that drive business growth and deliver exceptional user experiences.`;
+My journey into software development began with a deep curiosity about how systems work, which has evolved into a continuous pursuit of learning and problem-solving. I sharpen my algorithmic thinking by solving LeetCode problems, enabling me to approach complex challenges with precision and creativity. I thrive in collaborative environments, delivering high-quality solutions that merge functionality with seamless user experience.
+
+I hold a degree in Electronics and Computer Engineering from Bangalore Institute of Technology, graduated in 2025. Beyond coding, I stay active, explore emerging technologies, solve DSA problems, and contribute to open-source projects.`;
 
 export const EXPERIENCES = [
   {
-    year: "Jan 2025 - Present",
-    role: "Software Engineer Intern",
-    company: "Dialpad Inc.",
-    description: `I build, test, and deploy high-quality, scalable and efficient product features while collaborating with Product Managers and Engineering leaders. I work with technologies like Python, Vue.js, Google Cloud Platform (GCP), REST APIs, NoSQL Dababase, Git as version control system and WebSockets to create robust client-server applications. I also enhance internal tools to improve team productivity and build connections across the company.`,
-    technologies: ["Python", "Vue.js", "GCP", "Git", "NoSQL DB", "JSON", "Linux", "REST API", ],
+    year: "July 2025 - Present",
+    role: "Software Developer",
+    company: "Gray Matter",
+    description: `I'm working as a Software Developer at Gray Matter, an Indian startup based in Bangalore. I build full-stack applications using React.js for the frontend, Node.js and Express.js for the backend development, and MongoDB as the database, while using Git and GitHub for version control and team collaboration`,
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Postman", "GitHub","REST API",],
   },
   {
-    year: "Nov 2023 - Dec 2023",
-    role: "Front-End Web Developer Intern",
-    company: "Motion Cut",
-    description: `I have designed and developed several front-end projects, including a weather app, e-commerce webpage, calculator, and registration form, while gaining experience in deploying them on GitHub. I specialize in using HTML, CSS, and JavaScript to build dynamic and user-friendly client-side applications. Additionally, I focus on improving internal tools to boost team productivity and foster collaboration within the organization.`,
-    technologies: ["HTML", "CSS", "JavaScript", "GitHub", ],
+    year: "January 2025 - July 2025",
+    role: "Software Engineer Intern",
+    company: "Dialpad Inc.",
+    description: `I worked as a Software Engineer Intern at Dialpad, a product-based MNC headquartered in San Francisco, California, USA, with an office in Bangalore. During my internship, I worked on the Enterprise Customer Onboarding (ECO) project, where I built an end-to-end solution for the bulk creation of offices, users, and call-centers in a single flow. The feature allowed users to complete the entire onboarding process in one go through a multi-step modal interface, including CSV uploads. I developed the complete frontend using Vue.js along with Dialpad’s internal UI component library 'Dialtone', and implemented the backend using Python. I also wrote end-to-end test cases using pytest to validate the entire flow for ECO. Additionally, I handled multiple Jira tickets, one of which involved adding a last login field to the user profile model for storing the user's last login date and time. I used Git and GitHub for version control, Google Datastore as the NoSQL database, and Google Cloud Platform (GCP) for deployment of the application.`,
+    technologies: ["Python", "Vue.js", "GCP", "Git", "Pytest", "NoSQL DB", "JIRA", "Linux",],
   },
 ];
 

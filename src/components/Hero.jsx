@@ -38,7 +38,7 @@ const Hero = () => {
                     animate="visible"
                     className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-sm tracking-tight text-transparent origin-left">
                     <Typewriter
-                      words={["Full Stack Developer", "AI/ML Enthusiast", "Python Developer", "Problem Solver", "Tech Innovator"]}
+                      words={["Full Stack Developer", "Problem Solver", "Python Backend Developer", "AI/ML Enthusiast", "Tech Innovator"]}
                       loop={0}
                       cursor
                       cursorStyle="|"
