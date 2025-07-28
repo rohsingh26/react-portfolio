@@ -3,6 +3,7 @@ import { DiDjango } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
@@ -128,6 +129,11 @@ const Technologies = () => {
         animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiJavascript className="text-7xl text-yellow-500" />
         </motion.div>
+        <motion.div variants={iconVariants(2.5)}
+        initial="initial"
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiTypescript className="text-7xl text-blue-600" />
+        </motion.div>
         <motion.div variants={iconVariants(2)}
         initial="initial"
         animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }} className="rounded-2xl border-4 border-neutral-800 p-4">
@@ -160,7 +166,6 @@ const Technologies = () => {
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiOpencv className="text-7xl text-green-400" />
         </motion.div>
-
         <motion.div
         variants={iconVariants(2)}
         initial="initial"
@@ -168,7 +173,13 @@ const Technologies = () => {
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiNumpy className="text-7xl text-blue-400" />
         </motion.div>
-
+        <motion.div
+        variants={iconVariants(1.5)}
+        initial="initial"
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiLatex className="text-7xl text-blue-700" />
+        </motion.div>
         <motion.div
         variants={iconVariants(1.5)}
         initial="initial"
@@ -176,21 +187,12 @@ const Technologies = () => {
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <VscVscode className="text-7xl text-blue-500" />
         </motion.div>
-
         <motion.div
         variants={iconVariants(2)}
         initial="initial"
         animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiPycharm className="text-7xl text-lime-500" />
-        </motion.div>
-
-        <motion.div
-        variants={iconVariants(1.5)}
-        initial="initial"
-        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
-        className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiLatex className="text-7xl text-blue-700" />
         </motion.div>
         <motion.div
         variants={iconVariants(2)}
