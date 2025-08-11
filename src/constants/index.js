@@ -6,6 +6,7 @@ import project5 from "../assets/projects/project-5.jpg";
 import project6 from "../assets/projects/project-6.png";
 import project7 from "../assets/projects/project-7.png";
 import project0 from "../assets/projects/project-0.png";
+import project8 from "../assets/projects/project-8.png";
 
 export const HERO_CONTENT = `I am a Full-stack Developer with expertise in front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, Django, and Python, along with databases like MongoDB and MySQL. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications.
 
@@ -35,6 +36,23 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Employee Management System",
+    image: project8,
+    description:
+      "Developed a full-stack Employee Management System with secure login and registration, employee search by ID, and CRUD operations (add, update, delete). Employee records are stored in MongoDB, while Redis is used for API analytics, session storage, and rate limiting to enhance performance and security.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Redis"],
+    repo: "https://github.com/rohsingh26/Employee-Management-System-MongoDB-Redis",
+  },
+  {
+    title: "Expense Tracker",
+    image: project7,
+    description:
+      "Built a simple yet effective Expense Tracker Web App using Vue.js to help users manage their daily spending. Users can set a daily budget limit, track expenses, and get instant feedback on overspending or savings. The app stores data locally, ensuring expenses aren’t lost even after refreshing. A 'Clear All Data' button allows instant reset. Designed with a clean UI for easy and efficient tracking.",
+    technologies: ["Vue.js", "JavaScript", "CSS", "JSON",],
+    repo: "https://github.com/rohsingh26/Expense-Tracker",
+    liveDemo: "https://expense-tracker-rohit-singhs-projects-86330224.vercel.app/",
+  },
   {
     title: "Optimized LeetCode Filtration Process",
     image: project0,
@@ -68,15 +86,6 @@ export const PROJECTS = [
       "Developed BIT Discuss, a Twitter-inspired web application for college students, using Django for the back-end, SQLite for the database, and HTML/CSS for the front-end. The platform enables juniors and seniors to post doubts or discussion topics, fostering interaction and collaboration. Other users can comment on posts, providing insights and solutions.",
     technologies: ["Python", "Django","SQLite", "HTML", "CSS",],
     repo: "https://github.com/rohsingh26/bitdiscuss",
-  },
-  {
-    title: "Expense Tracker",
-    image: project7,
-    description:
-      "Built a simple yet effective Expense Tracker Web App using Vue.js to help users manage their daily spending. Users can set a daily budget limit, track expenses, and get instant feedback on overspending or savings. The app stores data locally, ensuring expenses aren’t lost even after refreshing. A 'Clear All Data' button allows instant reset. Designed with a clean UI for easy and efficient tracking.",
-    technologies: ["Vue.js", "JavaScript", "CSS", "JSON",],
-    repo: "https://github.com/rohsingh26/Expense-Tracker",
-    liveDemo: "https://expense-tracker-rohit-singhs-projects-86330224.vercel.app/",
   },
   {
     title: "Object Recognition System",
