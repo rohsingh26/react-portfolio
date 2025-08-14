@@ -7,6 +7,7 @@ import project6 from "../assets/projects/project-6.png";
 import project7 from "../assets/projects/project-7.png";
 import project0 from "../assets/projects/project-0.png";
 import project8 from "../assets/projects/project-8.png";
+import project9 from "../assets/projects/project-9.png";
 
 export const HERO_CONTENT = `I am a Full-stack Developer with expertise in front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, Django, and Python, along with databases like MongoDB and MySQL. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications.
 
@@ -43,6 +44,7 @@ export const PROJECTS = [
       "Developed a full-stack Employee Management System with secure login and registration, employee search by ID, and CRUD operations (add, update, delete). Employee records are stored in MongoDB, while Redis is used for API analytics, session storage, and rate limiting to enhance performance and security.",
     technologies: ["React", "Node.js", "Express.js", "MongoDB", "Redis"],
     repo: "https://github.com/rohsingh26/Employee-Management-System-MongoDB-Redis",
+    liveDemo: "https://full-stack-ems-frontend.vercel.app/",
   },
   {
     title: "Expense Tracker",
@@ -52,6 +54,15 @@ export const PROJECTS = [
     technologies: ["Vue.js", "JavaScript", "CSS", "JSON",],
     repo: "https://github.com/rohsingh26/Expense-Tracker",
     liveDemo: "https://expense-tracker-rohit-singhs-projects-86330224.vercel.app/",
+  },
+  {
+    title: "Task Manager",
+    image: project9,
+    description:
+      "A sleek React and Bootstrap task manager that stores all your tasks locally in the browser. Create, edit, complete, and delete tasks effortlessly with instant updates and intuitive UI. No backend required—your data stays stored via localStorage. Perfect for personal tasks lists with fast, responsive, offline support.",
+    technologies: ["React.js", "Bootstrap","JSON",],
+    repo: "https://github.com/rohsingh26/Task-Manager",
+    liveDemo: "https://task-manager-rho-vert-80.vercel.app/",
   },
   {
     title: "Optimized LeetCode Filtration Process",
