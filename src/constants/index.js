@@ -17,7 +17,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile Full-stack developer w
 
 My journey into software development began with a deep curiosity about how systems work, which has evolved into a continuous pursuit of learning and problem-solving. I sharpen my algorithmic thinking by solving LeetCode problems, enabling me to approach complex challenges with precision and creativity. I thrive in collaborative environments, delivering high-quality solutions that merge functionality with seamless user experience.
 
-I hold a degree in Electronics and Computer Engineering from Bangalore Institute of Technology, graduated in 2025. Beyond coding, I stay active, explore emerging technologies, solve DSA problems, and contribute to open-source projects.`;
+I hold a degree in ECE from Bangalore Institute of Technology, graduated in 2025. Beyond coding, I stay active, explore emerging technologies, solve DSA problems, and contribute to open-source projects.`;
 
 export const EXPERIENCES = [
   {
