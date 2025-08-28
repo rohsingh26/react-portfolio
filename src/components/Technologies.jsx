@@ -25,6 +25,7 @@ import { SiNumpy } from "react-icons/si";
 import { SiBootstrap } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { SiRedis } from "react-icons/si";
+import { SiApachekafka } from "react-icons/si";
 
 const iconVariants = (duration) => ({
   initial: {y:-10},
@@ -219,6 +220,13 @@ const Technologies = () => {
         animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <SiRedis className="text-7xl text-red-500" />
+        </motion.div>
+        <motion.div
+        variants={iconVariants(1.5)}
+        initial="initial"
+        animate="animate" drag dragConstraints={{top:0, bottom:0, left: 0, right: 0 }}
+        className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiApachekafka className="text-7xl #231F20" />
         </motion.div>
 
       </motion.div>

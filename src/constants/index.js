@@ -8,24 +8,25 @@ import project7 from "../assets/projects/project-7.png";
 import project0 from "../assets/projects/project-0.png";
 import project8 from "../assets/projects/project-8.png";
 import project9 from "../assets/projects/project-9.png";
+import project10 from "../assets/projects/project-10.png";
 
-export const HERO_CONTENT = `I am a Full-stack Developer with expertise in front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, Django, and Python, along with databases like MongoDB and MySQL. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications.
+export const HERO_CONTENT = `I am a Full-stack Developer with expertise in front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, Django, Python, Apache Kafka, and Redis, along with databases like MongoDB and MySQL. I use Git and GitHub for version control to ensure efficient collaboration and streamlined development processes, and have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications.
 
 This diverse skill set enables me to design and build robust, scalable, and efficient server-side solutions. My proficiency in C++ strengthens my problem-solving abilities, allowing me to approach challenges with precision and creativity. My goal is to develop innovative applications that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile Full-stack developer with a passion for building efficient, user-friendly web applications. My expertise spans front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, as well as back-end technologies such as Node.js, Express.js, Django, and Python. I have experience working with databases like MongoDB, SQLite, and MySQL. I use Git and GitHub as version control systems to ensure efficient collaboration and streamlined development processes. Additionally, I have hands-on experience with Google Cloud Platform (GCP) gained during my internship.
+export const ABOUT_TEXT = `I am a dedicated and versatile Full-stack Developer with a passion for building efficient, user-friendly web applications. My expertise spans front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, Django, Python, Apache Kafka, and Redis. I have experience working with databases like MongoDB, SQLite, and MySQL, and use Git and GitHub for version control to ensure efficient collaboration and streamlined development. Additionally, I have hands-on experience with Google Cloud Platform (GCP) gained during my internship.
 
-My journey into software development began with a deep curiosity about how systems work, which has evolved into a continuous pursuit of learning and problem-solving. I sharpen my algorithmic thinking by solving LeetCode problems, enabling me to approach complex challenges with precision and creativity. I thrive in collaborative environments, delivering high-quality solutions that merge functionality with seamless user experience.
+My journey into software development began with a deep curiosity about how systems work, evolving into a continuous pursuit of learning and problem-solving. I sharpen my algorithmic thinking by solving LeetCode problems, enabling me to approach complex challenges with precision and creativity. I thrive in collaborative environments, delivering high-quality solutions that merge functionality with seamless user experiences.
 
 I hold a degree in ECE from Bangalore Institute of Technology, graduated in 2025. Beyond coding, I stay active, explore emerging technologies, solve DSA problems, and contribute to open-source projects.`;
 
 export const EXPERIENCES = [
   {
     year: "July 2025 - Present",
-    role: "Software Developer",
+    role: "Software Development Engineer",
     company: "Gray Matter",
-    description: `I'm working as a Software Developer at Gray Matter, an Indian startup based in Bangalore. I build full-stack applications using React.js for the frontend, Node.js and Express.js for the backend development, and MongoDB as the database, while using Git and GitHub for version control and team collaboration.`,
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Postman", "GitHub","REST API",],
+    description: `I'm working as a Software Development Engineer at GrayMatter, an Indian startup based in Bengaluru, Karnataka. I build full-stack applications using React.js for the frontend, Node.js and Express.js for backend development, leveraging MongoDB, Redis, and Apache Kafka for efficient data management, real-time processing, and scalable system design, while using Git and GitHub for version control and team collaboration.`,
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redis", "Kafka", "Postman",],
   },
   {
     year: "January 2025 - July 2025",
@@ -37,6 +38,15 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Airline – Smart Real-Time Airport Management System",
+    image: project10,
+    description:
+      "Built with React.js, Node.js, MongoDB, Redis, Kafka, and Socket.io, this project ensures seamless airline operations with role-based access, real-time flight updates, caching, and live event streaming. Leveraging Kafka and Redis, it delivers low-latency notifications and scalable real-time passenger experiences.",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redis", "Apache Kafka"],
+    repo: "https://github.com/rohsingh26/Airline-with-Kafka",
+    liveDemo: "https://a-irline-frontend-without-kafka.vercel.app/",
+  },
   {
     title: "Employee Management System",
     image: project8,
@@ -64,6 +74,22 @@ export const PROJECTS = [
     repo: "https://github.com/rohsingh26/Task-Manager",
     liveDemo: "https://task-manager-rho-vert-80.vercel.app/",
   },
+    {
+    title: "BIT Connect - Real-Time Chat App",
+    image: project1,
+    description:
+      "Developed BIT Connect, a real-time chat web application for college students using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io for seamless real-time communication. This platform enables juniors and seniors to interact, ask questions, and resolve doubts effectively. The app features an user-friendly interface, instant messaging, and scalability to handle multiple users simultaneously.",
+    technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io"],
+    repo: "https://github.com/rohsingh26/bitconnect",
+  },
+  {
+    title: "BIT Discuss - Web Portal",
+    image: project2,
+    description:
+      "Developed BIT Discuss, a Twitter-inspired web application for college students, using Django for the back-end, SQLite for the database, and HTML/CSS for the front-end. The platform enables juniors and seniors to post doubts or discussion topics, fostering interaction and collaboration. Other users can comment on posts, providing insights and solutions.",
+    technologies: ["Python", "Django","SQLite", "HTML", "CSS",],
+    repo: "https://github.com/rohsingh26/bitdiscuss",
+  },
   {
     title: "Optimized LeetCode Filtration Process",
     image: project0,
@@ -81,22 +107,6 @@ export const PROJECTS = [
     technologies: ["Vue.js", "JavaScript", "CSS", "JSON",],
     repo: "https://github.com/rohsingh26/todo-app",
     liveDemo: "https://todo-app-rohit-singhs-projects-86330224.vercel.app/",
-  },
-  {
-    title: "BIT Connect - Real-Time Chat App",
-    image: project1,
-    description:
-      "Developed BIT Connect, a real-time chat web application for college students using the MERN stack (MongoDB, Express.js, React.js, Node.js) and Socket.io for seamless real-time communication. This platform enables juniors and seniors to interact, ask questions, and resolve doubts effectively. The app features an user-friendly interface, instant messaging, and scalability to handle multiple users simultaneously.",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB",],
-    repo: "https://github.com/rohsingh26/bitconnect",
-  },
-  {
-    title: "BIT Discuss - Web Portal",
-    image: project2,
-    description:
-      "Developed BIT Discuss, a Twitter-inspired web application for college students, using Django for the back-end, SQLite for the database, and HTML/CSS for the front-end. The platform enables juniors and seniors to post doubts or discussion topics, fostering interaction and collaboration. Other users can comment on posts, providing insights and solutions.",
-    technologies: ["Python", "Django","SQLite", "HTML", "CSS",],
-    repo: "https://github.com/rohsingh26/bitdiscuss",
   },
   {
     title: "Object Recognition System",
