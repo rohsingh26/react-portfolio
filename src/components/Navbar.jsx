@@ -30,11 +30,11 @@ const Navbar = () => {
         setText(fullText.slice(0, i + 1));
         i++;
         if (i === fullText.length) clearInterval(interval);
-      }, 120);
-    }, 150);
+      }, 100);
+    }, 100);
     setTimeout(() => {
       setShowAnimation(false);
-    }, 4600);
+    }, 3600);
   };
 
   useEffect(() => {
@@ -116,7 +116,7 @@ const Navbar = () => {
                   item === "Resume" ? (
                     <a
                       key={item}
-                      href="https://drive.google.com/file/d/1iRL_iHjqf994r934aIFHh6eHV-XH5dxH/view?usp=drivesdk"
+                      href="https://drive.google.com/file/d/1K2SUv-c_Lxl86aMcYCcji0V0Z_hAGXIg/view?usp=drivesdk"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:scale-110 transition-all duration-200 ease-in-out block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
