@@ -52,6 +52,21 @@ const Technologies = () => {
       initial={{opacity:0, x:-100}}
       transition={{duration:1.5}}
        className="flex flex-wrap items-center justify-center gap-4">
+        <motion.div variants={iconVariants(2.5)}
+        initial="initial"
+        animate="animate"  className="rounded-2xl border-4 border-neutral-800 p-4">
+            <FaPython className="text-7xl text-blue-500" />
+        </motion.div>
+        <motion.div variants={iconVariants(3)}
+        initial="initial"
+        animate="animate"  className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiCplusplus className="text-7xl text-blue-600" />
+        </motion.div>
+        <motion.div variants={iconVariants(2.5)}
+        initial="initial"
+        animate="animate"  className="rounded-2xl border-4 border-neutral-800 p-4">
+            <SiJavascript className="text-7xl text-yellow-500" />
+        </motion.div>
         <motion.div
         variants={iconVariants(1.5)}
         initial="initial"
@@ -59,7 +74,6 @@ const Technologies = () => {
         className="rounded-2xl border-4 border-neutral-800 p-4">
             <RiReactjsLine className="text-7xl text-cyan-400" />
         </motion.div>
-
         <motion.div
         variants={iconVariants(2)}
         initial="initial"
@@ -112,22 +126,6 @@ const Technologies = () => {
         initial="initial"
         animate="animate"  className="rounded-2xl border-4 border-neutral-800 p-4">
             <DiDjango className="text-7xl text-green-500" />
-        </motion.div>
-        
-        <motion.div variants={iconVariants(2.5)}
-        initial="initial"
-        animate="animate"  className="rounded-2xl border-4 border-neutral-800 p-4">
-            <FaPython className="text-7xl text-blue-500" />
-        </motion.div>
-        <motion.div variants={iconVariants(3)}
-        initial="initial"
-        animate="animate"  className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiCplusplus className="text-7xl text-blue-600" />
-        </motion.div>
-        <motion.div variants={iconVariants(2.5)}
-        initial="initial"
-        animate="animate"  className="rounded-2xl border-4 border-neutral-800 p-4">
-            <SiJavascript className="text-7xl text-yellow-500" />
         </motion.div>
         <motion.div variants={iconVariants(2.5)}
         initial="initial"
