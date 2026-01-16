@@ -137,7 +137,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Bengaluru, Karnataka, India - 560078",
+  address: "Bengaluru, Karnataka, India - 560103",
   phoneNo: "+91 8207523728 ",
   email: "rohsingh26@gmail.com",
 };
