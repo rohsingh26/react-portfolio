@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Loader from "./components/Loader";
 
 const Technologies = lazy(() => import("./components/Technologies"));
 const Projects = lazy(() => import("./components/Projects"));
@@ -30,7 +31,7 @@ const App = () => {
         <section id="experience" className="mt-20 scroll-mt-20"><Experience /></section>
 
         <section id="technologies" className="mt-20 scroll-mt-20">
-          <Suspense fallback={<div>Loading Technologies...</div>}>
+          <Suspense fallback={<Loader />}>
             <LazySection>
               <Technologies />
             </LazySection>
@@ -38,7 +39,7 @@ const App = () => {
         </section>
 
         <section id="projects" className="mt-20 scroll-mt-20">
-          <Suspense fallback={<div>Loading Projects...</div>}>
+          <Suspense fallback={<Loader />}>
             <LazySection>
               <Projects />
             </LazySection>
@@ -46,7 +47,7 @@ const App = () => {
         </section>
 
         <section id="contact" className="mt-20 scroll-mt-20">
-          <Suspense fallback={<div>Loading Contact...</div>}>
+          <Suspense fallback={<Loader />}>
             <LazySection>
               <Contact />
             </LazySection>
@@ -54,7 +55,7 @@ const App = () => {
         </section>
       </div>
 
-      <Suspense fallback={<div>Loading</div>}>
+      <Suspense fallback={<Loader size={60} />}>
         <LazySection>
           <Globe />
         </LazySection>

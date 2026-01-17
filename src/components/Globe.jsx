@@ -29,10 +29,10 @@ const Globe = () => {
   useEffect(() => {
     // Adjust rotation speed gradually
     const speedStages = [
-      { speed: 60, delay: 1000 },
-      { speed: 50, delay: 2000 },
-      { speed: 20, delay: 4000 },
-      { speed: 10, delay: 6000 },
+      { speed: 10, delay: 1000 },
+      { speed: 9, delay: 2000 },
+      { speed: 8, delay: 4000 },
+      { speed: 6, delay: 6000 },
       { speed: 5, delay: 8000 },
     ];
 
