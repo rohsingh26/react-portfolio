@@ -55,7 +55,7 @@ const App = () => {
         </section>
       </div>
 
-      <Suspense fallback={<Loader size={60} />}>
+      <Suspense fallback={<Loader />}>
         <LazySection>
           <Globe />
         </LazySection>
