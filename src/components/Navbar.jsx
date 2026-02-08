@@ -116,7 +116,7 @@ const Navbar = () => {
                   item === "Resume" ? (
                     <a
                       key={item}
-                      href="https://drive.google.com/file/d/1eDneLIrTj7KDrv8sSthWJiCYzWVdAgJ3/view?usp=drivesdk"
+                      href="https://drive.google.com/file/d/1pP-YW4IqeH95VQiGbgFV9MADc-AnJTLD/view?usp=drivesdk"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:scale-110 transition-all duration-200 ease-in-out block w-full px-3 py-2 text-left text-white text-sm hover:bg-gray-700">
