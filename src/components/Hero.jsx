@@ -48,7 +48,7 @@ const Hero = () => {
                     />
                   </motion.p> </motion.span>
                     <a
-                      href="https://drive.google.com/file/d/1pP-YW4IqeH95VQiGbgFV9MADc-AnJTLD/view?usp=drivesdk"
+                      href="https://drive.google.com/file/d/1-7vaLsRDl4jKUYI1TisyFkfJ1S0ZDtYL/view?usp=drivesdk"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="mt-10 flex items-center gap-2 text-neutral-400 text-lg font-medium hover:text-white transform hover:scale-110 transition-all duration-500 ease-in-out origin-left"
