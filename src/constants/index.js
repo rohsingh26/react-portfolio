@@ -9,24 +9,29 @@ import project0 from "../assets/projects/project-0.png";
 import project8 from "../assets/projects/project-8.png";
 import project9 from "../assets/projects/project-9.png";
 import project10 from "../assets/projects/project-10.png";
+import project11 from "../assets/projects/project-11.png";
 
-export const HERO_CONTENT = `I am a Full-stack Developer with expertise in front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, Django, Python, Apache Kafka, and Redis, along with databases like MongoDB and MySQL. I use Git and GitHub for version control to ensure efficient collaboration and streamlined development processes, and have experience with Google Cloud Platform (GCP) for deploying and managing cloud-based applications.
+export const HERO_CONTENT = `I am Rohit Singh, a Full-Stack Software Developer based in Bangalore India, specializing in building scalable backend systems and AI-powered applications. I have professional experience developing production-grade software using React.js, Node.js, Python, Express.js, Kafka, and Redis, delivering real-time and high-performance applications.
 
-This diverse skill set enables me to design and build robust, scalable, and efficient server-side solutions. My proficiency in C++ strengthens my problem-solving abilities, allowing me to approach challenges with precision and creativity. My goal is to develop innovative applications that drive business growth and deliver exceptional user experiences.`;
+I recently built an AI-powered Retrieval Augmented Generation (RAG) system, AI Knowledge Inbox, leveraging local embeddings and semantic search to enable intelligent, cost-efficient knowledge retrieval. My experience spans designing APIs, optimizing system performance, and deploying cloud-based applications on Google Cloud Platform.
 
-export const ABOUT_TEXT = `I am a dedicated and versatile Full-stack Developer with a passion for building efficient, user-friendly web applications. My expertise spans front-end technologies like React.js, Vue.js, Bootstrap, and Tailwind CSS, and back-end technologies such as Node.js, Express.js, Django, Python, Apache Kafka, and Redis. I have experience working with databases like MongoDB, SQLite, and MySQL, and use Git and GitHub for version control to ensure efficient collaboration and streamlined development. Additionally, I have hands-on experience with Google Cloud Platform (GCP) gained during my internship.
+I enjoy solving complex engineering problems, building reliable distributed systems, and transforming ideas into impactful products that deliver seamless user experiences at scale.`;
 
-My journey into software development began with a deep curiosity about how systems work, evolving into a continuous pursuit of learning and problem-solving. I sharpen my algorithmic thinking by solving LeetCode problems, enabling me to approach complex challenges with precision and creativity. I thrive in collaborative environments, delivering high-quality solutions that merge functionality with seamless user experiences.
+export const ABOUT_TEXT = `I am a passionate Full-Stack Developer with industry experience in designing and developing scalable web and backend systems. Currently working as a Software Developer in Bangalore India, I have contributed to enterprise-level applications involving real-time data processing, system optimization, and cloud deployment.
 
-I hold a degree in ECE from Bangalore Institute of Technology, graduated in 2025. Beyond coding, I stay active, explore emerging technologies, solve DSA problems, and contribute to open-source projects.`;
+During my professional journey at Dialpad and GrayMatter, I worked across the full software development lifecycle, building reusable frontend components, developing backend APIs, improving onboarding workflows, and deploying scalable services on Google Cloud Platform. I have hands-on experience with distributed technologies such as Apache Kafka and Redis to enable low-latency, event-driven applications.
+
+Beyond traditional development, I actively explore Artificial Intelligence systems and built a local RAG-based platform, AI Knowledge Inbox, focused on intelligent information retrieval using vector embeddings and semantic search.
+
+With strong foundations in Data Structures, System Design, and problem-solving (400+ DSA problems solved on LeetCode), I continuously strive to build efficient, reliable, and user-centric software systems while growing into a highly skilled backend and AI-focused engineer.`;
 
 export const EXPERIENCES = [
   {
     year: "July 2025 - Present",
-    role: "Software Development Engineer",
-    company: "Gray Matter",
+    role: "Software Developer",
+    company: "GrayMatter",
     description: `I'm working as a Software Development Engineer at GrayMatter, an Indian startup based in Bengaluru, Karnataka. I build full-stack applications using React.js for the frontend, Node.js and Express.js for backend development, leveraging MongoDB, Redis, and Apache Kafka for efficient data management, real-time processing, and scalable system design, while using Git and GitHub for version control and team collaboration.`,
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redis", "Kafka", "Postman",],
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "AWS", "Redis", "Kafka", "Postman",],
   },
   {
     year: "January 2025 - July 2025",
@@ -38,6 +43,15 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+  title: "AI Knowledge Inbox",
+  image: project11,
+  description:
+    "Developed a Retrieval Augmented Generation (RAG) system using a local MiniLM-L6-v2 embedding model to enable cost-efficient and low-latency semantic search. Integrated Gemini API for context-aware question answering over personalized knowledge sources. Implemented automated URL content ingestion, document chunking, vector embeddings, and vector-based semantic retrieval to generate accurate, citation-backed responses from user-specific data. The system enables intelligent knowledge management and private AI-powered search without relying on expensive cloud embeddings.",
+  technologies: ["Python", "MiniLM-L6-v2", "RAG", "FastAPI", "Vector Embeddings", "Semantic Search", "Gemini API", "SQLite",],
+  repo: "https://github.com/rohsingh26/AI-Knowledgeinbox-backend",
+  liveDemo: ""
+},
   {
     title: "Airline – Smart Real-Time Airport Management System",
     image: project10,
