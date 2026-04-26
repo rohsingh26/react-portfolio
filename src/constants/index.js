@@ -11,35 +11,46 @@ import project9 from "../assets/projects/project-9.png";
 import project10 from "../assets/projects/project-10.png";
 import project11 from "../assets/projects/project-11.png";
 
-export const HERO_CONTENT = `I am Rohit Singh, a Full-Stack Software Developer based in Bangalore India, specializing in building scalable backend systems and AI-powered applications. I have professional experience developing production-grade software using React.js, Node.js, Python, Express.js, Kafka, and Redis, delivering real-time and high-performance applications.
+export const HERO_CONTENT = `I am Rohit Singh, a Software Engineer based in Pune, India, specializing in building scalable backend systems and high-performance applications. I have professional experience working across startups and product-based companies, developing production-grade software using Java Spring Boot, React.js, Node.js, Python, Kafka, and Redis.
 
-I recently built an AI-powered Retrieval Augmented Generation (RAG) system, AI Knowledge Inbox, leveraging local embeddings and semantic search to enable intelligent, cost-efficient knowledge retrieval. My experience spans designing APIs, optimizing system performance, and deploying cloud-based applications on Google Cloud Platform.
+Currently, I work at Zebra Technologies, contributing to the Workforce Management (WFM) product by improving system reliability, debugging production issues, and optimizing backend APIs for performance and scalability.
 
-I enjoy solving complex engineering problems, building reliable distributed systems, and transforming ideas into impactful products that deliver seamless user experiences at scale.`;
+I have also built an AI-powered Retrieval Augmented Generation (RAG) system, AI Knowledge Inbox, leveraging local embeddings and semantic search for intelligent and cost-efficient knowledge retrieval. My experience spans designing robust APIs, working with distributed systems, and deploying cloud-based applications.
 
-export const ABOUT_TEXT = `I am a passionate Full-Stack Developer with industry experience in designing and developing scalable web and backend systems. Currently working as a Software Developer in Bangalore India, I have contributed to enterprise-level applications involving real-time data processing, system optimization, and cloud deployment.
+I enjoy solving complex engineering problems, building reliable systems, and transforming ideas into impactful products that deliver seamless user experiences at scale.`;
 
-During my professional journey at Dialpad and GrayMatter, I worked across the full software development lifecycle, building reusable frontend components, developing backend APIs, improving onboarding workflows, and deploying scalable services on Google Cloud Platform. I have hands-on experience with distributed technologies such as Apache Kafka and Redis to enable low-latency, event-driven applications.
+export const ABOUT_TEXT = `I am a Software Engineer with hands-on experience in designing and developing scalable backend and full-stack systems. Currently working at Zebra Technologies in Pune, I focus on enhancing system performance, resolving production issues, and improving API efficiency in enterprise-grade applications built with Java Spring Boot and Angular.
 
-Beyond traditional development, I actively explore Artificial Intelligence systems and built a local RAG-based platform, AI Knowledge Inbox, focused on intelligent information retrieval using vector embeddings and semantic search.
+Previously at GrayMatter, I developed scalable full-stack solutions using React.js, Node.js, Express.js, MongoDB, Redis, and Kafka, contributing to real-time, event-driven systems and improving development efficiency through reusable components and optimized workflows.
 
-With strong foundations in Data Structures, System Design, and problem-solving (400+ DSA problems solved on LeetCode), I continuously strive to build efficient, reliable, and user-centric software systems while growing into a highly skilled backend and AI-focused engineer.`;
+During my internship at Dialpad, I contributed to the Enterprise Customer Onboarding (ECO) project, building a complete end-to-end solution that streamlined bulk onboarding processes. I worked with Vue.js, Python, and GCP, and implemented testing strategies using Pytest to ensure reliability at scale.
+
+I also explore Artificial Intelligence systems and built a local RAG-based platform, AI Knowledge Inbox, focused on semantic search and intelligent knowledge retrieval.
+
+With strong foundations in Data Structures, System Design, and problem-solving (450+ DSA problems solved on LeetCode), I aim to build efficient, reliable, and scalable systems while growing as a backend and AI-focused engineer.`;
 
 export const EXPERIENCES = [
   {
-    year: "July 2025 - Present",
+  year: "April 2026 - Present",
+  role: "Software Engineer 1",
+  company: "Zebra Technologies",
+  description: `I'm working as a Software Engineer 1 at Zebra Technologies in Pune, India. I contribute to the Workforce Management (WFM) product by resolving production issues and implementing solutions to improve system reliability and performance. I work on backend services using Java Spring Boot and support Angular-based frontend, focusing on debugging, optimizing APIs, and enhancing system stability. I collaborate with cross-functional teams to identify root causes, prioritize fixes, and continuously improve product quality and performance.`,
+  technologies: ["Java", "Spring Boot", "Angular", "REST APIs", "Git", "GitHub", "Jira", "Salesforce", "Agile"],
+  },
+  {
+    year: "July 2025 - April 2026",
     role: "Software Developer",
     company: "GrayMatter",
-    description: `I'm working as a Software Development Engineer at GrayMatter, an Indian startup based in Bengaluru, Karnataka. I build full-stack applications using React.js for the frontend, Node.js and Express.js for backend development, leveraging MongoDB, Redis, and Apache Kafka for efficient data management, real-time processing, and scalable system design, while using Git and GitHub for version control and team collaboration.`,
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "AWS", "Redis", "Kafka", "Postman",],
+    description: `I worked as a Software Development Engineer at GrayMatter, an Indian startup based in Bengaluru, Karnataka. I built scalable full-stack applications for projects like BIAL and Skateboard using React.js, Node.js, and Express.js. I leveraged MongoDB, Redis, and Apache Kafka for efficient data handling and real-time processing. I also developed reusable components, improving development efficiency and reducing code duplication, while collaborating in Agile teams using Git and Bitbucket.`,
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "AWS", "Redis", "Kafka", "Postman"],
   },
   {
     year: "January 2025 - July 2025",
     role: "Software Engineer Intern",
     company: "Dialpad Inc.",
-    description: `I worked as a Software Engineer Intern at Dialpad Inc., a product-based MNC headquartered in San Francisco, California, USA, with an office in Bangalore. During my internship, I worked on the Enterprise Customer Onboarding (ECO) project, where I built an end-to-end solution for the bulk creation of offices, users, and call-centers in a single flow. The feature allowed users to complete the entire onboarding process in one go through a multi-step modal interface, including CSV uploads. I developed the complete frontend using Vue.js along with Dialpad’s internal UI component library 'Dialtone', and implemented the backend using Python. I also wrote end-to-end test cases using pytest to validate the entire flow for ECO. Additionally, I handled multiple Jira tickets, one of which involved adding a last login field to the user profile model for storing the user's last login date and time. I used Git and GitHub for version control, Google Datastore as the NoSQL database, and Google Cloud Platform (GCP) for deployment of the application.`,
-    technologies: ["Python", "Vue.js", "GCP", "Git", "Pytest", "NoSQL DB", "JIRA", "Linux",],
-  },
+    description: `I worked as a Software Engineer Intern at Dialpad Inc., contributing to the Enterprise Customer Onboarding (ECO) project. I built an end-to-end solution for bulk creation of offices, users, and call centers using a multi-step interface with CSV upload support. I developed the frontend using Vue.js and Dialtone UI library, and implemented backend services in Python. I also wrote end-to-end test cases using Pytest, handled Jira tickets, and deployed solutions on GCP using Datastore.`,
+    technologies: ["Python", "Vue.js", "GCP", "Git", "Pytest", "NoSQL DB", "JIRA", "Linux"],
+  }
 ];
 
 export const PROJECTS = [
@@ -151,7 +162,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Bengaluru, Karnataka, India - 560103",
+  address: "Pune, Maharashtra, India - 411028",
   phoneNo: "+91 8207523728 ",
   email: "rohsingh26@gmail.com",
 };
