@@ -35,7 +35,7 @@ export const EXPERIENCES = [
   role: "Software Engineer 1",
   company: "Zebra Technologies",
   description: `I'm working as a Software Engineer 1 at Zebra Technologies in Pune, India. I contribute to the Workforce Management (WFM) product by resolving production issues and implementing solutions to improve system reliability and performance. I work on backend services using Java Spring Boot and support Angular-based frontend, focusing on debugging, optimizing APIs, and enhancing system stability. I collaborate with cross-functional teams to identify root causes, prioritize fixes, and continuously improve product quality and performance.`,
-  technologies: ["Java", "Spring Boot", "Angular", "REST APIs", "Git", "GitHub", "Jira", "Salesforce", "Agile"],
+  technologies: ["Python", "Retrieval-Augmented Generation (RAG)","Java", "Spring Boot", "Angular", "REST APIs", "Git", "GitHub", "Jira", "Salesforce", "Agile"],
   },
   {
     year: "July 2025 - April 2026",
